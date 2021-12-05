@@ -17,15 +17,23 @@ git clone https://github.com/ivan-iglesias/docker-php-mysql-redis-nginx.git <PRO
 cd <PROJECT_DIRECTORY>
 ```
 
-3. Set your project's origin
+3. Remove `.git` folder
 
 ```
-git remote set-url origin https://<TOKEN>@github.com/<USER_NAME>/<PROJECT_NAME>.git
+rm -rf .git/
 ```
 
-4. Update `.env` file.
+4. Create a new repository
 
-5. Build and run docker containers using docker-compose
+```
+git init
+
+git remote add origin https://<TOKEN>@github.com/<USER_NAME>/<PROJECT_NAME>.git
+```
+
+5. Update `.env` file.
+
+6. Build and run docker containers using docker-compose
 
 ```
 docker-compose up -d --build
