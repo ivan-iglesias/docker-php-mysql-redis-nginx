@@ -70,7 +70,6 @@ Edit `.vscode/launch.json` file setting port and pathMappings.
                 "/var/www/<APP_NAME>/": "${workspaceFolder}/src"
             }
         },
-        ...
 ```
 
 ## License
