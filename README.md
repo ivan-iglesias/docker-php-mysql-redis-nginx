@@ -45,12 +45,26 @@ docker-compose logs -f <SERVICE_NAME>
 docker exec -it <APP_NAME>_php bash
 ```
 
-2. Create a Symfony application with one of the following commands
+2. Remove `.gitignore` file
 
 ```
+rm .gitignore
+```
+
+3. Create a Symfony application with one of the following commands
+
+```
+# traditional web application
 composer create-project symfony/website-skeleton .
 
+# microservice, console application or API
 composer create-project symfony/skeleton .
+```
+
+4. Check the website
+
+```
+localhost:8080
 ```
 
 ## Xdebug with VCode
